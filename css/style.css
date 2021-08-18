@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(145deg, teal, purple);
+}
+.box{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    font-size: 18px;
+}
+#number{
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+#btn{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+#btn:disabled {
+    background-color: rgba(120, 151, 151,)
+    color: rgb(27, 27, 27);
+    cursor: not-allowed;
+}
